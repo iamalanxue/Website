@@ -24,3 +24,26 @@ burger.onclick = function(){
         burger.classList.add("is-active");
     }
 }
+
+// var tl = new TimelineMax();
+
+// tl.from(".ring1", 4, {
+//     delay:0.4,
+//     opacity: 0,
+//     y:40,
+// }).from(".ring2", 4, {
+//     delay: 0.9,
+//     opacity: 0,
+//     y: 40,
+// }, "-=5").to(".ring1",4, {
+//     delay: 0.4,
+//     opacity: 1,
+//     x: 20,
+// }).to(".ring2", 4, {
+//     delay:0.4,
+//     opacity: 1,
+//     x: 20,
+// }, "-=5")
+// var tl = newTimelineMax();
+
+// tl.fromto('.contrast', 2, {height: '0vh', opacity:1}, {height:'100vh', opacity:0.3});
