@@ -47,3 +47,8 @@ burger.onclick = function(){
 // var tl = newTimelineMax();
 
 // tl.fromto('.contrast', 2, {height: '0vh', opacity:1}, {height:'100vh', opacity:0.3});
+
+TweenMax.staggerfrom(".media ul li", 3, {
+    opacity: 0,
+    y: 20,
+}, 0.1)

@@ -5,6 +5,39 @@
     box-sizing: border-box;
 }
 
+header{
+    position: relative;
+}
+.media{
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    right: 2.1%;
+}
+.media ul li{
+    opacity: 0;
+    padding: 12px 0;
+    animation: fade-away 1.3s 3s forwards ease-in-out;
+}
+
+@keyframes fade-away{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-15px);
+    }
+}
+
+.fab, .far{
+    color: grey;
+    font-size: 1.3rem;
+}
+.fab:hover, .far:hover{
+    color: rgb(163, 163, 163);
+}
 .background-container{
     height: 100vh;
     position: relative;
@@ -18,7 +51,7 @@
     left: 0%;
     /* transform: translate(-50%, -50%); */
     z-index: 1;
-    animation: scale 2s forwards ease-in-out;
+    animation: scale 1s forwards ease-in-out;
 }
 
 @keyframes scale{
@@ -47,14 +80,14 @@
     left: -20%; /* originally 30%*/
     font-size: 3.2rem;
     transform: translate(-50%, -100%);
-    animation: title-move 3s 3s ease-in-out forwards;
+    animation: title-move 1.5s 3s ease-in-out forwards;
 }
 
 @keyframes title-move{
     0%{
         opacity: 0;
         top: 50%;
-        left: -20%;
+        left: 25%;
     }
     100%{
         opacity: .8;
@@ -85,7 +118,8 @@
 
 
 .ring img{
-    width: 760px;  /*controlling the size of the circle */
+    width: 750px;  /*controlling the size of the circle */
+    z-index: 2;
 }
 
 .ring{
@@ -95,11 +129,10 @@
     /* transform: translate(-50%, -50%); */
     opacity: 0;
     z-index: 1;
-    animation: move 3s 2s ease-in-out forwards;
+    animation: move 2.5s 2s ease-in-out forwards;
 }
 
 .ring1 img{
-    width: 760px;
     animation: rotater 2s linear infinite;
 }
 
@@ -137,3 +170,4 @@ button{
         transform: translate(40%, -35%);
     }
 }
+
