@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+header{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/Chicago.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    justify-content: center;
+    align-items: center;
+} */
+#picture-container{
+    position: relative;
+}
+#picture-container img{
+    width: 100%;
+    height: 100vh;
+}
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    font-family: 'Indie Flower', cursive;
+    animation: landing 1.2s 1s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-clip: border-box;
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* new background color*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+@keyframes landing{
+    from{
+        opacity: 0;
+        transform: translate(-60%, -50%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.landing-text h1{
+    font-size: 6rem;
+    /* color: rgb(247, 185, 185); */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.landing-text h6{
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.fab, .fas{
+    font-size: 1.5rem;
+    color:rgb(129, 163, 218);
+    color: #77C8D6;
+}
+
+.fab:hover, .fas:hover{
+    color:rgb(99, 145, 212);
+}
+.social-media{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    opacity: 0;
+    animation: icons 1s 1s ease-in forwards;
+}
+
+@keyframes icons{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+.social-media ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
