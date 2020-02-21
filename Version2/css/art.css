@@ -1,0 +1,37 @@
+.rotateimg90 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#art{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+#gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: row wrap;
+    height: 100vh;
+    margin: 0;
+}
+.picture{
+    width: 200px;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.picture img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
